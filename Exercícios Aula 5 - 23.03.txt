@@ -1,0 +1,182 @@
+Exercício 1:
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idade, meses, dias, diasTotal
+
+		escreva("Insira quantos anos você viveu até agora: ")
+		leia(idade)
+
+		escreva("Insira quantos meses você viveu desde seu último aniversário: ")
+		leia(meses)
+
+		escreva("Insira quantos dias você viveu desde o último mês: ")
+		leia(dias)
+
+		diasTotal = (idade * 365 + (idade / 4)) + (meses * 30 + (idade * 5)) + dias
+
+		escreva("Você viveu, aproximadamente, " , diasTotal, " dias até agora!")
+	}
+}
+
+
+Exercício 2:
+
+	funcao inicio()
+	{
+		inteiro idadeDias, idadeMeses, idadeAnos
+
+		escreva("Insira quanto dias você já viveu: ")
+		leia(idadeDias)
+          
+          idadeAnos = (idadeDias / 365)
+
+          idadeMeses = (idadeDias / 30) - (idadeAnos / 5)
+
+          escreva("Você viveu, aproximadamente, " , idadeAnos, " anos, " , idadeMeses, 
+          " meses e " , idadeDias, " dias até agora, parabéns!")
+	}
+
+Exercício 3:
+
+funcao inicio()
+	{
+
+       inteiro segundos, tempoMinutos
+       real tempoHoras
+
+       escreva("Insira quantos segundos o evento durou: ")
+       leia(segundos)
+
+       tempoHoras = segundos / 3600
+
+       tempoMinutos = segundos / 60
+
+       escreva("Esse evento durou " , tempoHoras, " horas, " , tempoMinutos, 
+       " minutos e " , segundos, " segundos.")
+	}
+
+Exercício 4:
+
+funcao inicio()
+	{
+
+        inteiro A, B, C, D, R, S
+
+        escreva("Digite um número positivo e inteiro: ")
+        leia(A)
+
+        escreva("Digite outro número positivo e inteiro: ")
+        leia(B)
+
+        escreva("Digite o último número positivo e inteiro que iremos utilizar: ")
+        leia(C)
+
+        R = ((A * 2) + (B * 2))
+        S = ((B * 2) + (C * 2))
+
+        D = (R + S) / 2
+
+        escreva("O resultado da expressão D = R + S tendo em conta os valores inseridos é: " ,
+        D, ".")
+	}
+
+Exercício 5:
+
+funcao inicio()
+	{
+
+          inteiro peso1, peso2, peso3
+		real nota1, nota2, nota3, mediaFinal
+
+          peso1 = 2
+          peso2 = 3
+          peso3 = 5
+          
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+		
+		escreva("Digite a terceira nota: ")
+		leia(nota3)
+
+		mediaFinal = ((nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3))
+
+		escreva("Sua média final é " , mediaFinal, ".")
+	}
+
+Exercício 6:
+
+inteiro x1, x2, y1, y2, distancia = 0
+
+		escreva("Insira o primeiro ponto do primeiro plano: ")
+		leia(x1)
+		
+		escreva("Insira o segundo ponto do primeiro plano: ")
+		leia(y1)
+		
+		escreva("Insira o primeiro ponto do segundo plano: ")
+		leia(x2)
+		
+		escreva("Insira o segundo ponto do segundo plano: ")
+		leia(y2)
+
+		distancia = mat.raiz((((x2 - x1) ^ 2) + ((y2 - y1) ^ 2)) , 2)
+
+		escreva("A distância ente o pontos é: " + distancia)
+
+Exercício 7:
+
+inteiro a, b, c, d, E, f, x, y
+
+		escreva("Digite o valor de 'A'")
+		leia(a)
+
+		escreva("Digite o valor de 'B'")
+		leia(b)
+
+		escreva("Digite o valor de 'C'")
+		leia(c)
+
+		escreva("Digite o valor de 'D'")
+		leia(d)
+
+		escreva("Digite o valor de 'E'")
+		leia(E)
+
+		escreva("Digite o valor de 'F'")
+		leia(f)
+
+		x = (c*E - b*f) / (a*E - b*d)
+		y = (a*f - c*d) / (a*E - b*d)
+
+		escreva("O valor de x é: " + x)
+		escreva("O valor de y é: " + y)
+
+Exercício 8:
+
+inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+
+ 
+		real custoFabrica, percDis, percImp, custoCon
+
+        escreva("Insira o custo de fábrica do carro: ")
+		leia(custoFabrica)
+		
+		percDis = custoFabrica * 0.28 
+		percImp = custoFabrica * 0.45 
+
+		custoCon = custoFabrica + percDis + percImp
+        custoCon = mat.arredondar(custoCon, 3)
+          
+		escreva("O custo ao consumidor será de: " , custoCon, ".")
+          
+	}

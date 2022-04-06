@@ -1,0 +1,233 @@
+Exercício 1:
+
+{
+		real P, M, E
+
+		escreva("Qual o peso de tomate de hoje, meu caro João? ")
+		leia(P)
+		
+		se (P > 50) {
+			E = P - 50
+			M = 4.00 * E
+
+			escreva("Excesso: " + E + ".")
+			
+			escreva("\nMulta a pagar: " + M)
+		
+			escreva("\nVocê deverá pagar uma multa de " + M + " por ter trago " + E + 
+			" quilos a mais.")
+				  }
+		senao {
+				E = 0
+				M = 0
+
+				escreva(E)
+		
+			     escreva("\nMulta a pagar: " + M)
+			     
+				escreva("\nVocê não deverá pagar multar devido o peso estar " + E +
+				".")
+	            }
+}
+
+
+Exercício 2:
+
+funcao inicio()
+	{
+		real C, salTotal
+		inteiro N, numHorasExc
+		cadeia E
+
+		escreva("Quantas horas tu trabalhou, meu caro operário? ")
+		leia(N)
+		
+		se (N > 50) {
+			E = "Há horas excedentes."
+			numHorasExc = N - 50
+			C = numHorasExc * 20.00
+               salTotal = ((N - numHorasExc) * 10) + (C)
+               
+			escreva(E)
+
+			escreva("\nSalário excedente: " + C)
+                     
+			escreva("\nSalário total: " + salTotal)
+				  }
+		senao {
+				E = "Sem horas excedentes."
+				C = 0
+                    salTotal = (N * 10)
+ 
+				     escreva(E)
+
+                     escreva("\nSalário excedente: " + E)
+                     
+			         escreva("\nSalário total: " + salTotal)
+			      
+				 
+		      }
+	}
+
+Exercício 3:
+
+inteiro n1, n2, n3, n4,
+		quadradoN1, quadradoN2, quadradoN3, quadradoN4,
+		quadradoTerN1, quadradoTerN2, quadradoTerN3, quadradoTerN4
+
+		escreva("Insira o primeiro número: ")
+		leia(n1)
+		escreva("Insira o segundo número: ")
+		leia(n2)
+		escreva("Insira o terceira número: ")
+		leia(n3)
+		escreva("Insira o quarto número: ")
+		leia(n4)
+
+		quadradoN1 = n1 * n1
+		quadradoN2 = n2 * n2
+		quadradoN3 = n3 * n3
+		quadradoN4 = n4 * n4
+
+		quadradoTerN1 = quadradoN1 * n1
+		quadradoTerN2 = quadradoN2 * n2
+		quadradoTerN3 = quadradoN3 * n3
+		quadradoTerN4 = quadradoN4 * n4
+
+		se    (quadradoTerN1 >= 1000) {
+
+			             escreva("Número escolhido: " + n1)
+			             escreva("\nQuadrado do terceiro deu 1000 ou mais: " + 
+			             quadradoTerN1)
+		         }
+		senao se (quadradoTerN2 >= 1000) {
+			             
+			             escreva("Número escolhido: " + n2)
+			             escreva("\nQuadrado do terceiro deu 1000 ou mais: " + 
+			             quadradoTerN2)
+		}
+		senao se (quadradoTerN3 >= 1000) {
+			             
+			             escreva("Número escolhido: " + n3)
+			             escreva("\nQuadrado do terceiro deu 1000 ou mais: " + 
+			             quadradoTerN3)
+		}
+		senao se (quadradoTerN4 >= 1000) {
+			             
+			             escreva("Número escolhido: " + n4)
+			             escreva("\nQuadrado do terceiro deu 1000 ou mais: " + 
+			             quadradoTerN4)
+		}
+		senao    {
+			
+				escreva("Número escolhido: " + n1 + " e seu quadrado: " + quadradoN1)
+				escreva("\nNúmero escolhido: " + n2 + " e seu quadrado: " + quadradoN2)
+				escreva("\nNúmero escolhido: " + n3 + " e seu quadrado: " + quadradoN3)
+				escreva("\nNúmero escolhido: " + n4 + " e seu quadrado: " + quadradoN4)
+		         }
+Exercício 4:
+
+		inteiro numero, resto
+
+		escreva("Insira um número inteiro: ")
+		leia(numero)
+		
+		resto = numero % 2
+
+		se (resto == 0) {
+			escreva("Este número é par.")
+		}
+		senao {
+			escreva("Este número é ímpar.")
+		}
+		se (numero < 0) {
+			escreva("\nE também é negativo.")
+		}
+		senao {
+			escreva("\nE também é positivo.")
+		}
+
+Exercício 5:
+
+        real indice
+
+		escreva("Insira o índice de poluíção: ")
+		leia(indice)
+
+		se (indice >= 0.05 e indice <= 0.25) {
+			escreva("Tudo certo.")
+		}
+		senao se (indice >= 0.30 e indice < 0.40) {
+			escreva("As indústrias do 1º grupo devem ser intimadas a suspenderem " +
+			"suas atividades.")
+		}
+		senao se (indice >= 0.40 e indice < 0.50) {
+			escreva("As indústrias do 1º e 2º grupos devem ser intimadas a suspenderem " +
+			"suas atividades.")
+		}
+		senao se (indice >= 0.50) {
+			escreva("As indústrias de todos os grupos devem ser intimadas a suspenderem " +
+			"suas atividades.")
+	   }
+	   senao {
+	   	escreva("Tão baixo assim? Que bom!")
+	   }
+
+Exercício 6:
+
+inteiro idade
+
+		escreva("Insira a idade do nadador: ")
+		leia(idade)
+
+		se (idade >= 5 e idade < 8) {
+			escreva("Categoria Infantil A")
+		}
+		senao se (idade >= 8 e idade < 12) {
+			escreva("Categoria Infantil B")
+		}
+		senao se (idade >= 12 e idade < 14) {
+			escreva("Categoria Juvenil A")
+		}
+		senao se (idade >= 14 e idade < 18) {
+			escreva("Categoria Juvenil B")
+		}
+		senao {
+			escreva("Categoria Adultos")
+		}
+
+Exercício 7:
+
+	real base, altura, area
+
+		escreva("Insira o valor da base do triângulo: ")
+		leia(base)
+
+		escreva("Insira o valor da altura do triângulo: ")
+		leia(altura)
+
+		area = (base * altura) / 2
+		 
+		se (base > 0 e altura > 0) {
+			
+			escreva("\nA área do triângulo é: " + area)
+		}
+		senao {
+			escreva("\nEscolhe números positivos, né?")
+		}
+
+Exercício 8:
+
+	real N
+
+		escreva("Insira seu número: ")
+		leia(N)
+
+		se (N > 100) {
+			escreva("Aqui está seu número: " + N)
+		}
+		senao {
+			escreva("ZERO")
+		}
+		
+Parabéns à mim, fiz todos! :3

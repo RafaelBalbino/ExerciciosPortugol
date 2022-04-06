@@ -1,0 +1,72 @@
+PARA
+
+Exercício 1 - 
+
+
+
+Exercício 2 - 
+
+inteiro soma = 0, restoMul, restoImp
+		/* O soma foi inicializada como 'soma = 0' devido 
+		 ao erro na linha 24 dizendo que ela não está
+		 inicializada. 
+		 Devidor a estarmos utilizando ela em uma operação, 
+		 que no caso é de soma ai não tem como o computador 
+		 fazer uma soma se a variável tá vazia, sem nada. 
+		 Por isso colocamos 0, por ser um número neutro 
+		 em soma. */
+		
+		para (inteiro n = 1; n <= 500; n++) {
+				
+				restoMul = n % 3
+				restoImp = n % 2
+				
+			se (restoMul == 0 e restoImp == 1) {
+			
+				// escreva(n + " ") - Coloquei isso só pra ver se calculava certinho, indo de 6 em 6.
+				soma += n + n  
+				// Igual á 'soma = soma + n + n', que é o modo mais longo de escrever o trecho acima.
+				                  
+         }
+      }
+      escreva("A soma de todos esses números é: " + soma)
+      escreva("\nFim do Programa!")
+
+ENQUANTO
+
+Exercício 1 - 
+
+
+
+Exercício 2 - 
+
+inteiro num, res
+
+		escreva("Digite um número: ")
+		leia(num)
+
+		res = num * 3
+		escreva(num + " " + res + " ")
+		
+		enquanto (res < 100) {
+							res = res * 3
+							escreva(res + " ")
+		                     }
+		escreva("\nFim do Programa!")
+
+FAÇA...ENQUANTO
+
+Exercício 1 - 
+
+inteiro x = 233
+
+		faca {
+			escreva(x, "\n")
+			x += 3
+
+			se (x > 300 e x < 400){
+				x += 2
+			}
+		} enquanto (x <= 456)
+
+Exercício 2 - 
